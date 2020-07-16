@@ -1,0 +1,90 @@
+header {
+  .header-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    background: white;
+    width: 100%;
+    padding: $default-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 999;
+    box-shadow: $elevation-2;
+
+    .logo {
+      display: flex;
+      text-decoration: none;
+      color: $green;
+
+      img {
+        width: 30px;
+        margin-right: 1em;
+      }
+
+      .title {
+        font-family: $heading-font;
+        font-size: $h5;
+      }
+    }
+
+    nav {
+      ul {
+        margin: 0;
+        display: flex;
+        li {
+          list-style: none;
+
+          + li {
+            margin-left: 1em;
+          }
+
+          a {
+            color: $text-colour;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s ease-in-out border-bottom-color;
+
+            &:hover {
+              border-bottom-color: $primary-colour;
+              // border-bottom-width: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-content {
+    margin-top: 5em;
+    padding: $default-padding;
+    display: flex;
+    align-items: center;
+    min-height: calc(70vh - 5rem);
+    position: relative;
+
+    box-sizing: border-box;
+    color: $white;
+
+    &::before {
+      content: '';
+      background-color: $black;
+      background: url('../img/liv-bruce-odIhQypCuUk-unsplash.jpg');
+      background-size: cover;
+      // filter: blur(3px);
+      background-position-x: left;
+      background-position-y: top;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      color: $primary-colour;
+    }
+  }
+}

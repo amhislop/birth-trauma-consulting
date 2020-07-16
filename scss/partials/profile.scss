@@ -1,0 +1,26 @@
+.profile {
+  margin-top: 1rem;
+  display: flex;
+  overflow: hidden;
+  background: $white;
+  border: 1px solid $border-colour;
+  border-radius: $default-radius;
+  padding: $default-padding;
+
+  &__image {
+    width: 40%;
+    overflow: hidden;
+    border-radius: $default-radius;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__bio {
+    margin-left: 2em;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}

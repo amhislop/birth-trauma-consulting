@@ -1,0 +1,23 @@
+.side-image-row {
+  .column {
+    box-sizing: border-box;
+    + .column {
+      margin-left: 0;
+    }
+  }
+  .column:not(.side-image) {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      justify-content: flex-end;
+    }
+  }
+
+  .side-image {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+#about {
+  position: relative;
+  // background: blue;
+  &::after {
+    content: '';
+    background: url('../img/logo.svg');
+    position: absolute;
+  }
+
+  #why,
+  #approach {
+    padding: $default-padding;
+  }
+}

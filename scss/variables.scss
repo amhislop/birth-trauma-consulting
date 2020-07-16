@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400|Montserrat:400');
+
+$melon: #ffd0cb;
+$eggshell: #faf3ddff;
+$green: #588b8b;
+$powder-blue: #aed9e0ff;
+$black-coral: #5e6472ff;
+$black: #333;
+$white: lighten($powder-blue, 21%);
+
+$primary-colour: $melon;
+$text-colour: $black-coral;
+$background-colour: $eggshell;
+$border-colour: lighten($text-colour, 50%);
+// $border-colour: $primary-colour;
+
+$container-width: 1100px;
+
+$heading-font: 'Lato', sans-serif;
+$text-font: 'Montserrat', sans-serif;
+
+$default-padding: 1.5em 2em;
+$default-radius: 3px;
+
+/* Elevation */
+$elevation-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$elevation-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$elevation-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$elevation-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(
+  0deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-right: linear-gradient(
+  90deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-bottom: linear-gradient(
+  180deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-left: linear-gradient(
+  270deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-top-right: linear-gradient(
+  45deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-bottom-right: linear-gradient(
+  135deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-top-left: linear-gradient(
+  225deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-bottom-left: linear-gradient(
+  315deg,
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+$gradient-radial: radial-gradient(
+  #ffd0cbff,
+  #faf3ddff,
+  #b8f2e6ff,
+  #aed9e0ff,
+  #5e6472ff
+);
+
+$h1: 3.052em;
+$h2: 2.441em;
+$h3: 1.953em;
+$h4: 1.563em;
+$h5: 1.25em;
+$small: 0.8em;

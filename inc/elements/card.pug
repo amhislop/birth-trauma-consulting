@@ -1,0 +1,11 @@
+mixin card(title, image)
+  .card
+    if image
+      .card__image(style=`background-image: url('img/${image}');`)
+    .card__content
+      if title
+        h4.card__title
+          em=title
+      hr
+      if block
+        block
