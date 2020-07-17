@@ -15,6 +15,10 @@
 
   &__content {
     padding: $default-padding;
+
+    h5:first-child {
+      margin-top: 0;
+    }
   }
 
   &__image {

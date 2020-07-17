@@ -16,8 +16,21 @@ body {
   color: $text-colour;
 }
 
+small {
+  font-size: $small;
+}
+
 hr {
   border-color: $powder-blue;
+}
+
+details[open] {
+  margin-bottom: 1rem;
+}
+summary {
+  font-size: $h5;
+  display: inline-block;
+  cursor: pointer;
 }
 
 a.button {
@@ -47,10 +60,23 @@ a.button {
   flex-wrap: wrap;
   justify-content: space-between;
 
+  &--thirds {
+    > div {
+      min-width: calc(33% - 1em);
+      + div {
+        margin-left: 1em;
+      }
+    }
+  }
+
   .column {
     flex: 1;
     + .column {
       margin-left: 1em;
+    }
+
+    &--wide {
+      min-width: 75%;
     }
   }
 }

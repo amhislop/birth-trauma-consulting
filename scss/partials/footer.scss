@@ -1,0 +1,35 @@
+footer {
+  background: $black;
+  color: $white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: $default-padding;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+
+      + li {
+        margin-left: 1em;
+      }
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s ease-in-out border-bottom-color;
+
+      &:hover {
+        border-color: $primary-colour;
+      }
+    }
+  }
+}
