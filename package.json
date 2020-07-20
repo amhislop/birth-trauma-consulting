@@ -1,12 +1,12 @@
 {
-  "name": " ",
+  "name": "birth-trauma-consultancy-website",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "description": "Birth Trauma Consultancy website",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Aidan Hislop <aidanhislop@gmail.com> (https://aidanhislop.com)",
   "scripts": {
-    "build": "parcel build index.pug",
+    "build": "parcel build ./*.pug",
     "dev": "parcel index.pug --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
