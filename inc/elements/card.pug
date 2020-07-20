@@ -1,7 +1,11 @@
 mixin card(title, image)
   .card
     if image
-      .card__image(style=`background-image: url('img/${image}');`)
+      .card__image
+        picture
+          source(src=`img/${image}.webp`, type="image/webp")
+          source(src=`img/${image}.jpg`, type="image/jpeg")
+          img(src=`img/${image}.jpg`, alt="" loading="lazy")
     .card__content
       if title
         h4.card__title

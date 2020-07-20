@@ -60,7 +60,8 @@ $image-size: 150px;
       border-top-right-radius: $default-radius;
       border-bottom-right-radius: $default-radius;
       margin-left: 0.5em;
-      border-left: 3px solid $green;
+      // border-left: 3px solid $green;
+      border-left: 3px solid $primary-colour;
     }
   }
 }

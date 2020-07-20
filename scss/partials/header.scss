@@ -49,7 +49,6 @@ header {
 
             &:hover {
               border-bottom-color: $primary-colour;
-              // border-bottom-width: 1px;
             }
           }
         }
@@ -70,9 +69,7 @@ header {
     &::before {
       content: '';
       background-color: $black;
-      background: url('../img/liv-bruce-odIhQypCuUk-unsplash.jpg');
       background-size: cover;
-      // filter: blur(3px);
       background-position-x: left;
       background-position-y: top;
       position: absolute;
@@ -84,7 +81,15 @@ header {
     }
 
     h1 {
-      color: $primary-colour;
+      color: $white;
     }
   }
+}
+
+html header .header-content::before {
+  background-image: url('../img/hands.jpg');
+}
+
+html.webp header .header-content::before {
+  background-image: url('../img/hands.webp');
 }

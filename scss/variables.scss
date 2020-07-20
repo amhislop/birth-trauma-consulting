@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400|Montserrat:400');
 
 $melon: #ffd0cb;
-$eggshell: #faf3ddff;
+$mauve: #6a3343;
+$eggshell: #fffaf3;
 $green: #588b8b;
 $powder-blue: #aed9e0ff;
 $black-coral: #5e6472ff;
 $black: #333;
+$error: red;
+// $white: lighten($powder-blue, 21%);
 $white: lighten($powder-blue, 21%);
 
-$primary-colour: $melon;
+$primary-colour: $mauve;
 $text-colour: $black-coral;
 $background-colour: $eggshell;
 $border-colour: lighten($text-colour, 50%);

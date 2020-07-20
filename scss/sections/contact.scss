@@ -1,6 +1,59 @@
 #contact {
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+
+    .field {
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding: 1.5em 0 0 1.5em;
+      width: calc(100% - 1.5em);
+      &--half {
+        width: calc(50% - 1.5em);
+      }
+    }
+
+    label {
+      display: block;
+      // font-size: $h5;
+      margin: 0 0 0.7em 0;
+      font-weight: bold;
+
+      .required {
+        font-size: $small;
+        color: $error;
+      }
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      // border-color: $border-colour;
+      border: 0;
+      border: 1px solid $border-colour;
+      border-radius: $default-radius;
+
+      &:focus {
+        outline-color: $powder-blue;
+      }
+    }
+
+    input {
+      height: 2.75em;
+      padding: 0 1em;
+    }
+
+    textarea {
+      padding: 0.75em 1em;
+    }
+  }
+
+  .actions {
+    // margin-top:
+    margin: 1.5em;
   }
 }
