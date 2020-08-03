@@ -1,21 +1,29 @@
 .card {
-  flex: 1;
+  // flex: 1;
+  display: flex;
+  flex-direction: column;
   border: 1px solid $border-colour;
   border-radius: $default-radius;
   overflow: hidden;
   background: $white;
-  min-width: calc(50% - 1em);
   margin-bottom: 1em;
 
-  &:nth-child(even) {
-    margin-left: 1em;
-  }
+  // + .card {
+  //   margin-left: 1em;
+  // }
 
   &__content {
     padding: $default-padding;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 
-    h5:first-child {
+    *:first-child {
       margin-top: 0;
+    }
+
+    > *:not(h5):not(.button) {
+      flex-grow: 1;
     }
   }
 
@@ -29,6 +37,7 @@
       height: 4em;
       width: 100%;
       object-fit: cover;
+      object-position: top;
     }
   }
 }

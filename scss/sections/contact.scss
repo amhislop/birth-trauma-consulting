@@ -13,6 +13,11 @@
       &--half {
         width: calc(50% - 1.5em);
       }
+
+      @include respond-to('mobile') {
+        padding-left: 0;
+        width: 100%;
+      }
     }
 
     label {
@@ -53,7 +58,10 @@
   }
 
   .actions {
-    // margin-top:
     margin: 1.5em;
+
+    @include respond-to('mobile') {
+      margin-left: 0;
+    }
   }
 }

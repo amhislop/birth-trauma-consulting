@@ -3,6 +3,10 @@ section {
 
   .section__inner {
     padding: 3em;
+
+    @include respond-to('tablet') {
+      padding: 1.5em;
+    }
   }
 
   h3 {
@@ -12,20 +16,6 @@ section {
   .section__title:first-child {
     margin-top: 0;
   }
-
-  // .grid {
-  //   display: grid;
-  //   grid-template-columns: repeat(6, 1fr);
-  //   grid-gap: 2em;
-
-  //   &__column {
-  //     grid-column: span 2;
-
-  //     &--wide {
-  //       grid-column: span 4;
-  //     }
-  //   }
-  // }
 
   &.poppy {
     position: relative;

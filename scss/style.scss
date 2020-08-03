@@ -2,6 +2,7 @@
 @import 'default';
 @import 'variables';
 @import 'fonts';
+@import 'mixins/helpers';
 @import 'global';
 @import 'template';
 
@@ -12,9 +13,7 @@
 @import 'partials/cards';
 @import 'partials/profile';
 @import 'partials/facts';
-@import 'partials/column-insert';
 @import 'partials/features';
 
-@import 'sections/introduction';
 @import 'sections/about';
 @import 'sections/contact';

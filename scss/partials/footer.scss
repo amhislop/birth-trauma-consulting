@@ -8,10 +8,21 @@ footer {
     padding: $default-padding;
   }
 
+  // @include respond-to('mobile') {
+  //   margin-left: 0;
+  // }
+
   nav {
     ul {
       display: flex;
       margin: 0;
+
+      @include respond-to('mobile') {
+        display: block;
+        li + li {
+          margin-left: 0;
+        }
+      }
     }
 
     li {
