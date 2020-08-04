@@ -6,37 +6,4 @@
     background: url('../img/logo.svg');
     position: absolute;
   }
-
-  #approach {
-    padding: $default-padding;
-
-    @include respond-to('mobile') {
-      padding: 0;
-    }
-
-    .column {
-      max-width: calc(50% - 1em);
-      flex: none;
-      margin-bottom: 3em;
-    }
-    @include respond-to('mobile') {
-      .column {
-        max-width: 100%;
-      }
-    }
-
-    .image-heading {
-      margin-bottom: 3em;
-      display: flex;
-      justify-content: center;
-
-      img {
-        height: 150px;
-      }
-    }
-
-    p {
-      text-align: center;
-    }
-  }
 }

@@ -11,6 +11,7 @@ hamburgerButton.addEventListener('click', function (e) {
   hamburgerButton.classList.toggle('open');
 });
 
+// Smooth scroll
 // Navigation Links
 navigationLinks.forEach((link) =>
   link.addEventListener('click', function (e) {
