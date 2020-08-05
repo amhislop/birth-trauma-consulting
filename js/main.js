@@ -1,4 +1,4 @@
-const navigationLinks = document.querySelectorAll("header nav a[href^='/#']");
+const pageLinks = document.querySelectorAll("a[href^='/#']");
 const sections = document.querySelectorAll('section');
 const hamburgerButton = document.querySelector('.nav-open-hamburger');
 
@@ -13,11 +13,16 @@ hamburgerButton.addEventListener('click', function (e) {
 
 // Smooth scroll
 // Navigation Links
-navigationLinks.forEach((link) =>
+pageLinks.forEach((link) =>
   link.addEventListener('click', function (e) {
     e.preventDefault();
-    const targetLink = e.target.href.match(/.*\/#(.*)/)[1];
+    const targetLink = link.href.match(/.*\/#(.*)/)[1];
     const targetElement = document.getElementById(targetLink);
+
+    if (link.matches('.open + nav a')) {
+      hamburgerButton.classList.remove('open');
+    }
+
     if (!!targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }

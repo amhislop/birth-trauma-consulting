@@ -161,6 +161,7 @@ header {
 
     &::before {
       content: '';
+      filter: contrast(0.7);
       background-color: $black;
       background-size: cover;
       background-position-x: left;

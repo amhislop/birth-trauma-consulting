@@ -34,8 +34,6 @@ small {
 
 hr {
   border-color: $powder-blue;
-  // border-color: $primary-colour;
-  // border-width: 2px;
 }
 
 details[open] {
@@ -43,7 +41,6 @@ details[open] {
 }
 summary {
   font-size: $h5;
-  display: inline-block;
   cursor: pointer;
   padding: 0.2em 0.5em;
   > * {
