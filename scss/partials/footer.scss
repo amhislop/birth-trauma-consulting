@@ -6,11 +6,20 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: $default-padding;
+
+    @include respond-to('mobile') {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
   }
 
-  // @include respond-to('mobile') {
-  //   margin-left: 0;
-  // }
+  a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid $green;
+  }
 
   nav {
     ul {
@@ -19,6 +28,9 @@ footer {
 
       @include respond-to('mobile') {
         display: block;
+        padding: 0;
+        margin-bottom: 2rem;
+        flex-direction: row;
         li + li {
           margin-left: 0;
         }
