@@ -3,7 +3,7 @@ section#contact.tint
     .container
       h3 Contact us
       .inner
-        form(action="https://formspree.io/mjvalagk" method="POST")
+        form#contact_form(action="https://formspree.io/mjvalagk" method="POST")
           .fields
             .field.field--half
               label(for="first_name") First Name 
@@ -25,4 +25,4 @@ section#contact.tint
               textarea#message(name="message", rows="5" required)
           .actions
             .action
-              input.button(type="submit" value="Submit")
+              button.button.g-recaptcha(data-sitekey="6LekvbwZAAAAAKOQn96khY5t0y-7QG-X8sc1UqtQ", data-callback='onSubmit', data-action='submit') Submit
