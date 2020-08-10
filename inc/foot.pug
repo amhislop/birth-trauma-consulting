@@ -3,4 +3,4 @@ script(src="js/plugins.js")
 script(src="js/main.js")
 script(src="https://www.google.com/recaptcha/api.js")
 script.
-  function onSubmit(token) { document.getElementById('contact_form').submit();  }
+  window.onSubmit = function(token) { document.getElementById('contact_form').submit();  }
