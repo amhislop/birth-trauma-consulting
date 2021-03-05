@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/main.js"],"names":["navigationLinks","document","querySelectorAll","sections"],"mappings":";AAAA,IAAMA,EAAkBC,SAASC,iBAAiB,SAC5CC,EAAWF,SAASC,iBAAiB","file":"main.3cb1d48a.js","sourceRoot":"..","sourcesContent":["const navigationLinks = document.querySelectorAll('nav a');\nconst sections = document.querySelectorAll('section');\n"]}
